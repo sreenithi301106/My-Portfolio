@@ -1,0 +1,165 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #faf8ff;
+  color: #29243b;
+  line-height: 1.7;
+}
+
+header {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  background: #faf8ff;
+  z-index: 10;
+}
+
+.logo {
+  color: #805ad5;
+  font-size: 23px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a {
+  margin-left: 16px;
+  color: #29243b;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #805ad5;
+}
+
+section {
+  padding: 70px 10%;
+  scroll-margin-top: 65px;
+}
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tag {
+  color: #805ad5;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(38px, 7vw, 65px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 22px;
+}
+
+h1 span, h2 span {
+  color: #805ad5;
+}
+
+p {
+  color: #716b80;
+  max-width: 600px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px 8px 0 0;
+  padding: 11px 20px;
+  border-radius: 9px;
+  background: #805ad5;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.dark {
+  background: #29243b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  padding: 23px;
+  background: white;
+  border: 1px solid #eee8fa;
+  border-radius: 14px;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px #30205012;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+.contact {
+  background: #f0eaff;
+  border-radius: 20px;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #716b80;
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  nav a {
+    margin-left: 7px;
+    font-size: 12px;
+  }
+
+  section {
+    padding: 50px 7%;
+  }
+}
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #805ad5;
+  margin-bottom: 20px;
+}
